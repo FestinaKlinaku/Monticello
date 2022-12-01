@@ -4,38 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
     <title>Monticello</title>
 </head>
 <body>
     <header class="main-header">
         <div class="container">
-            <div class="flex-container">
-                <div class="main-header__nav">
-                    <a href="#" class="logo">
-                    <img src="./assets/logo.svg" alt="logo" />
-                    </a>
-                    <ul class="main-nav">
-                    <li class="main-nav__item"><a href="">About us</a></li>
+            <div class="main-header__nav">
+                <a href="#" class="logo">
+                <img src="./assets/logo.svg" alt="logo" />
+                </a>
+                <ul class="main-nav">
+                    <li class="main-nav__item"><a href="#projects">About us</a></li>
                     <li class="main-nav__item"><a href="">Projects</a></li>
                     <li class="main-nav__item"><a href="">News</a></li>
                     <li class="main-nav__item"><a href="">Contact</a></li>
-                    </ul>
-                    <ul class="social-nav">
-                        <li class="social-nav__item"><a href=""><img src="./assets/facebook.svg"/></a></li>
-                        <li class="social-nav__item"><a href=""><img src="./assets/twitter.svg"/></a></li>
-                        <li class="social-nav__item"><a href=""><img src="./assets/instagram.svg"/></a></li>
-                    </ul>
-                </div>
-                <div class="main-header__content">
-                    <h1 class="main-header__title">Simple & Modern</h1>
-                    <span class="main-header__subtitle">We make the world beautiful everyday</span>
-                </div>
+                </ul>
+                <ul class="social-nav">
+                    <li><a href=""><img src="./assets/facebook.svg"/></a></li>
+                    <li><a href=""><img src="./assets/twitter.svg"/></a></li>
+                    <li><a href=""><img src="./assets/instagram.svg"/></a></li>
+                </ul>
+            </div>
+            <div class="main-header__content">
+                <h1>Simple & Modern</h1>
+                <span>We make the world beautiful everyday</span>
             </div>
         </div>
     </header>
 
     <main class="main">
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="container">
                 <h2>What we do</h2>
                 <article class="projects__content project-one">
@@ -108,23 +110,64 @@
             </div>
         </section>
         <section class="gallery">
-            <h2>Gallery</h2>
-            <div class="gallery__images">
-                <img src="./assets/img-gallery-1.png" alt="">
-                <img src="./assets/img-gallery-2.png" alt="">
-                <img src="./assets/img-gallery-3.png" alt="">
-                <img src="./assets/img-gallery-4.png" alt="">
-                <img src="./assets/img-gallery-5.png" alt="">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="gallery__images">
+                    <img src="./assets/img-gallery-1.png" alt="">
+                    <img src="./assets/img-gallery-2.png" alt="">
+                    <img src="./assets/img-gallery-3.png" alt="">
+                    <img src="./assets/img-gallery-4.png" alt="">
+                    <img src="./assets/img-gallery-5.png" alt="">
+                </div>
+                <a href="" class="see-more">See more</a>
             </div>
-            <a href="" class="see-more">See more</a>
         </section>
         <section class="contact">
-
+            <div class="container">
+                <div class="form">
+                    <h2>Get in touch</h2>
+                    <div class="contact__info">
+                        <ul>
+                            <li>91 Nolan Extensions Suite 670</li>
+                            <li>+001 356-868-2454</li>
+                            <li>montichello@service.com</li>
+                            <li>From 07:05AM to 19:30PM</li>
+                        </ul>
+                    </div>
+                    <div class="contact__form">
+                        <form action="">
+                            <ul>
+                                <li>
+                                    <label for="name">Name:</label>
+                                    <input type="text" id="name" name="user_name" />
+                                </li>
+                                <li>
+                                    <label for="mail">E-mail:</label>
+                                    <input type="email" id="mail" name="user_email" />
+                                </li>
+                                <li><input type="submit" value="Submit"></li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer class="main-footer">
-
+        <div class="container">
+            <div class="main-footer__credit">
+                <a href="#" class="logo">
+                    <img src="./assets/logo.svg" alt="logo" />
+                </a>
+                <span class="copyright">Copyrights &copy 2020 Montichello</span>
+            </div>
+            <ul class="social-nav">
+                <li class="social-nav__item"><a href=""><img src="./assets/facebook.svg"/></a></li>
+                <li class="social-nav__item"><a href=""><img src="./assets/twitter.svg"/></a></li>
+                <li class="social-nav__item"><a href=""><img src="./assets/instagram.svg"/></a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
