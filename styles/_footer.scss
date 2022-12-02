@@ -1,0 +1,37 @@
+.main-footer {
+    background-image: url('../assets/bg-footer.png'), $linearGradient1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 214px;
+    padding-bottom: 233px;
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 770px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        .main-footer__credit {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            row-gap: 41px;
+            .copyright {
+                display: block;
+                font-family: $headingFont;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: $neutralMax;
+            }
+        }
+        .social-nav {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 20px;
+        }
+    }
+}

@@ -172,28 +172,30 @@
             <div class="container">
                 <div class="form">
                     <h2>Get in touch</h2>
-                    <div class="contact__info">
-                        <ul>
-                            <li>91 Nolan Extensions Suite 670</li>
-                            <li>+001 356-868-2454</li>
-                            <li>montichello@service.com</li>
-                            <li>From 07:05AM to 19:30PM</li>
-                        </ul>
-                    </div>
-                    <div class="contact__form">
-                        <form action="">
+                    <div class="form__info">
+                        <div class="contact__info">
                             <ul>
-                                <li>
-                                    <label for="name">Name:</label>
-                                    <input type="text" id="name" name="user_name" />
-                                </li>
-                                <li>
-                                    <label for="mail">E-mail:</label>
-                                    <input type="email" id="mail" name="user_email" />
-                                </li>
-                                <li><input type="submit" value="Submit"></li>
+                                <li>91 Nolan Extensions Suite 670</li>
+                                <li>+001 356-868-2454</li>
+                                <li>montichello@service.com</li>
+                                <li>From 07:05AM to 19:30PM</li>
                             </ul>
-                        </form>
+                        </div>
+                        <div class="contact__form">
+                            <form action="">
+                                <ul>
+                                    <li>
+                                        <label for="name">Name:</label>
+                                        <input type="text" id="name" name="user_name" placeholder="Name" value="Mollie Medina" />
+                                    </li>
+                                    <li>
+                                        <label for="mail">E-mail:</label>
+                                        <input type="email" id="mail" name="user_email" placeholder="Email" />
+                                    </li>
+                                    <li><button type="submit" class="btn">Submit</button></li>
+                                </ul>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -202,17 +204,19 @@
 
     <footer class="main-footer">
         <div class="container">
-            <div class="main-footer__credit">
-                <a href="#" class="logo">
-                    <img src="./assets/logo.svg" alt="logo" />
-                </a>
-                <span class="copyright">Copyrights &copy 2020 Montichello</span>
+            <div class="flex-container">
+                <div class="main-footer__credit">
+                    <a href="#" class="logo">
+                        <img src="./assets/logo.svg" alt="logo" />
+                    </a>
+                    <span class="copyright">Copyrights &copy 2020 Montichello</span>
+                </div>
+                <ul class="social-nav">
+                    <li class="social-nav__item"><a href=""><img src="./assets/facebook.svg"/></a></li>
+                    <li class="social-nav__item"><a href=""><img src="./assets/twitter.svg"/></a></li>
+                    <li class="social-nav__item"><a href=""><img src="./assets/instagram.svg"/></a></li>
+                </ul>
             </div>
-            <ul class="social-nav">
-                <li class="social-nav__item"><a href=""><img src="./assets/facebook.svg"/></a></li>
-                <li class="social-nav__item"><a href=""><img src="./assets/twitter.svg"/></a></li>
-                <li class="social-nav__item"><a href=""><img src="./assets/instagram.svg"/></a></li>
-            </ul>
         </div>
     </footer>
 

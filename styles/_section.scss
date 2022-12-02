@@ -169,10 +169,20 @@
     background-image: url('../assets/map.png');
     background-size: cover;
     background-repeat: no-repeat;
+    padding-top: 400px;
+    margin-top: 140px;
     .form {
         background-color: $neutralMax;
-        /* h2 {
-            margin-top: 140px;
+        padding: 60px;
+        max-width: 770px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: -150px;
+        left: 0;
+        right: 0;
+        h2 {
+            margin-top: 40px;
             &::before {
                 content: '';
                 width: 100px;
@@ -186,6 +196,53 @@
                 text-align: center;
                 top: -30px;
             }
-        } */
+        }
+        .form__info {
+            padding-top: 42px;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 54px;
+            width: 100%;
+            .contact__info {
+                font-size: 18px;
+                line-height: 28px;
+                width: calc(50% - 37px);
+                ul li {
+                    padding-bottom: 30px;
+
+                }
+            }
+            .contact__form {
+                width: calc(50% - 27px);
+                position: relative;
+                ul li {
+                    padding-bottom: 30px;
+                    label, input {
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+                    label {
+                        display: none;
+                    }
+                    input[type='text'], input[type='email'] {
+                        width: 100%;
+                        border: none;
+                        border-bottom: 1px solid #2C4058;
+                        &::placeholder {
+                            color: #4B5562;
+                            opacity: 0.5;
+                        }
+                    }
+                    .btn {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                    }
+                }
+                ul li:last-child {
+                    padding-bottom: 0;
+                }
+            }
+        }
     }
 }

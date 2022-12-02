@@ -2,3 +2,9 @@
     @include link;
     @include button;
 }
+
+.btn {
+    @include link;
+    @include button;  
+    background-color: $neutralMax;             
+}

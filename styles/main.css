@@ -115,6 +115,20 @@ h2 {
   border: 1px solid #2C4058;
 }
 
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 16px 41px;
+  border: 1px solid #2C4058;
+  background-color: #FFFFFF;
+}
+
 body {
   max-width: 1600px;
   width: 100%;
@@ -354,23 +368,127 @@ body {
   background-image: url("../assets/map.png");
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 400px;
+  margin-top: 140px;
 }
 .contact .form {
   background-color: #FFFFFF;
-  /* h2 {
-      margin-top: 140px;
-      &::before {
-          content: '';
-          width: 100px;
-          border: 0.5px solid $accent3;
-          background-color: $accent3;
-          position: absolute;
-          margin-left: auto;
-          margin-right: auto;
-          left: 0;
-          right: 0;
-          text-align: center;
-          top: -30px;
-      }
-  } */
+  padding: 60px;
+  max-width: 770px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: -150px;
+  left: 0;
+  right: 0;
+}
+.contact .form h2 {
+  margin-top: 40px;
+}
+.contact .form h2::before {
+  content: "";
+  width: 100px;
+  border: 0.5px solid #2C4058;
+  background-color: #2C4058;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: -30px;
+}
+.contact .form .form__info {
+  padding-top: 42px;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 54px;
+       column-gap: 54px;
+  width: 100%;
+}
+.contact .form .form__info .contact__info {
+  font-size: 18px;
+  line-height: 28px;
+  width: calc(50% - 37px);
+}
+.contact .form .form__info .contact__info ul li {
+  padding-bottom: 30px;
+}
+.contact .form .form__info .contact__form {
+  width: calc(50% - 27px);
+  position: relative;
+}
+.contact .form .form__info .contact__form ul li {
+  padding-bottom: 30px;
+}
+.contact .form .form__info .contact__form ul li label, .contact .form .form__info .contact__form ul li input {
+  font-size: 18px;
+  line-height: 28px;
+}
+.contact .form .form__info .contact__form ul li label {
+  display: none;
+}
+.contact .form .form__info .contact__form ul li input[type=text], .contact .form .form__info .contact__form ul li input[type=email] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #2C4058;
+}
+.contact .form .form__info .contact__form ul li input[type=text]::-moz-placeholder, .contact .form .form__info .contact__form ul li input[type=email]::-moz-placeholder {
+  color: #4B5562;
+  opacity: 0.5;
+}
+.contact .form .form__info .contact__form ul li input[type=text]:-ms-input-placeholder, .contact .form .form__info .contact__form ul li input[type=email]:-ms-input-placeholder {
+  color: #4B5562;
+  opacity: 0.5;
+}
+.contact .form .form__info .contact__form ul li input[type=text]::placeholder, .contact .form .form__info .contact__form ul li input[type=email]::placeholder {
+  color: #4B5562;
+  opacity: 0.5;
+}
+.contact .form .form__info .contact__form ul li .btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.contact .form .form__info .contact__form ul li:last-child {
+  padding-bottom: 0;
+}
+
+.main-footer {
+  background-image: url("../assets/bg-footer.png"), linear-gradient(243.43deg, #55B7FF 16.9%, #7E5AFF 83.27%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 214px;
+  padding-bottom: 233px;
+}
+.main-footer .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 770px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.main-footer .flex-container .main-footer__credit {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 41px;
+}
+.main-footer .flex-container .main-footer__credit .copyright {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.main-footer .flex-container .social-nav {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }/*# sourceMappingURL=main.css.map */
