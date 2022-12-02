@@ -17,3 +17,31 @@ h1 {
     color: $neutralMax;
     text-transform: uppercase;
 }
+
+h2 {
+    font-family: $headingFont;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    text-align: center;
+    color: $accent3;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.container > h2 {
+    margin-top: 140px;
+    &::before {
+        content: '';
+        width: 100px;
+        border: 0.5px solid $accent3;
+        background-color: $accent3;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: -30px;
+    }
+}

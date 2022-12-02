@@ -1,0 +1,15 @@
+@mixin link {
+    font-family: $headingFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $neutralMin;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@mixin button {
+    padding: 16px 41px;
+    border: 1px solid $accent3;
+}

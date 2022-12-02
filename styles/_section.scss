@@ -1,0 +1,191 @@
+.projects {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 100px;
+        .project {
+            padding-top: 119px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .projects__image {
+                position: relative;
+                width: 48%;
+                img {
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+            .project-one {
+                img {
+                    box-shadow: -215px -57px 0 $accent1;
+                }
+            }
+            .project-two {
+                img {
+                    box-shadow: 215px -57px 0 $accent2;
+                }
+            }
+            .projects__content {
+                padding-top: 40px;
+                width: 48%;
+                .projects__subtitle {
+                    font-family: $headingFont;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: $accent3;
+                    text-transform: uppercase;
+                    padding-top: 100px;
+                }
+                h2 {
+                    text-align: left;
+                    padding-bottom: 19px;
+                }
+                .projects__text {
+                    padding-bottom: 41px;
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+                .see-more {
+                    display: block;
+                    width: fit-content;
+                    margin-bottom: 60px;
+                }
+                .projects__location {
+                    font-size: 15px;
+                    line-height: 20px;
+                    font-style: italic;
+                    &::before {
+                        content: url('../assets/icon-location.svg');
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.news {
+    background-image: url('../assets/bg-news.png'), $linearGradient2;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 140px;
+    h2 {
+        padding-top: 135px;
+        color: $neutralMax;
+        &::before {
+            top: 105px;
+            border: 0.5px solid $neutralMax;
+            background-color: $neutralMax;
+        }
+        padding-bottom: 89px;
+    }
+    .news__article {
+        background-color: $neutralMax;
+        h3 {
+            padding-top: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: $neutralMin;
+            font-family: $headingFont;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            text-transform: uppercase;
+            padding-bottom: 15px;
+        }
+        p {
+            padding: 0 20px;
+            padding-bottom: 39px;
+        }
+        .author {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 20px;
+            padding-bottom: 30px;
+            width: 80%;
+            align-items: center;
+            column-gap: 20px;
+            .author__photo {
+                width: 30%;
+                border-radius: 50%;
+            }
+            .author__info {
+                .author__name {
+                    text-transform: uppercase;
+                    line-height: 22px;
+                }
+                .publishing-date {
+                    font-family: $headingFont;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: $accent1;
+                }
+            }
+        }
+    }
+}
+
+.gallery {
+    h2 {
+        padding-bottom: 89px;
+    }
+    .gallery__images {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        margin-bottom: 60px;
+        max-width: 1170px;
+        width: 100%;
+        .img-one { 
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .img-two,
+        .img-three,
+        .img-four,
+        .img-five {
+            grid-row: span 1;
+            grid-column: span 1;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .gallery__button {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.contact {
+    background-image: url('../assets/map.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .form {
+        background-color: $neutralMax;
+        /* h2 {
+            margin-top: 140px;
+            &::before {
+                content: '';
+                width: 100px;
+                border: 0.5px solid $accent3;
+                background-color: $accent3;
+                position: absolute;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                text-align: center;
+                top: -30px;
+            }
+        } */
+    }
+}

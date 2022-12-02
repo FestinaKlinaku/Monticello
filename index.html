@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./vendor/owl/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="./vendor/owl/assets/owl.theme.default.css" />
     <link rel="stylesheet" href="./styles/main.css">
     <title>Monticello</title>
 </head>
@@ -40,36 +42,36 @@
         <section class="projects" id="projects">
             <div class="container">
                 <h2>What we do</h2>
-                <article class="projects__content project-one">
-                    <div class="projects__image">
-                        <span class="square"></span>
-                        <img src="./assets/img-projects-1.png">
-                    </div>
-                    <div class="projects__content">
-                        <span class="projects__subtitle">One world</span>
-                        <h2>Trade center</h2>
-                        <p class="projects__text">
-                            Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.
-                        </p>
-                        <a href="" class="see-more">More details</a>
-                        <span class="projects__location">New York City, United States - 1776 feet</span>
-                    </div>
-                </article>
-                <article class="projects__content project-two">
-                    <div class="projects__image">
-                        <span class="square"></span>
-                        <img src="./assets/img-projects-2.png">
-                    </div>
-                    <div class="projects__content">
-                        <span class="projects__subtitle">International</span>
-                        <h2>Commerce centre</h2>
-                        <p class="projects__text">
-                            Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.
-                        </p>
-                        <a href="" class="see-more">More details</a>
-                        <span class="projects__location">Hong Kong - 1588 feet</span>
-                    </div>
-                </article>
+                <div class="flex-container">
+                    <article class="project">
+                        <div class="projects__image project-one">
+                            <img src="./assets/img-projects-1.png">
+                        </div>
+                        <div class="projects__content">
+                            <span class="projects__subtitle">One world</span>
+                            <h2>Trade center</h2>
+                            <p class="projects__text">
+                                Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.
+                            </p>
+                            <a href="" class="see-more">More details</a>
+                            <address class="projects__location">New York City, United States - 1776 feet</address>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <div class="projects__content">
+                            <span class="projects__subtitle">International</span>
+                            <h2>Commerce centre</h2>
+                            <p class="projects__text">
+                                Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.
+                            </p>
+                            <a href="" class="see-more">More details</a>
+                            <address class="projects__location">Hong Kong - 1588 feet</address>
+                        </div>
+                        <div class="projects__image project-two">
+                            <img src="./assets/img-projects-2.png">
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
         <section class="news">
@@ -82,8 +84,10 @@
                         <p>Free directories: directories are perfect for customers that are searching for...</p>
                         <div class="author">
                             <img src="./assets/author-1.png" class="author__photo">
-                            <span class="author__name">Alja Brun</span>
-                            <span class="publishing-date">20 Jan 2020</span>
+                            <div class="author__info">
+                                <span class="author__name">Alja Brun <br></span>
+                                <span class="publishing-date">20 Jan 2020</span>
+                            </div>
                         </div>
                     </article>
                     <article class="news__article">
@@ -92,8 +96,10 @@
                         <p>Having a home based business is a wonderful asset to your life...</p>
                         <div class="author">
                             <img src="./assets/author-2.png" class="author__photo">
-                            <span class="author__name">Dominic Freeman</span>
-                            <span class="publishing-date">13 Dec 2019</span>
+                            <div class="author__info">
+                                <span class="author__name">Dominic Freeman <br></span>
+                                <span class="publishing-date">13 Dec 2019</span>
+                            </div>
                         </div>
                     </article>
                     <article class="news__article">
@@ -102,8 +108,46 @@
                         <p>There are many things that are important to catalog design...</p>
                         <div class="author">
                             <img src="./assets/author-3.png" class="author__photo">
-                            <span class="author__name">Alice Ward</span>
-                            <span class="publishing-date">30 Nov 2019</span>
+                            <div class="author__info">
+                                <span class="author__name">Alice Ward <br></span>
+                                <span class="publishing-date">30 Nov 2019</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="news__article">
+                        <img src="./assets/img-news-1.png">
+                        <h3>See the unmatched beauty of the great</h3>
+                        <p>Free directories: directories are perfect for customers that are searching for...</p>
+                        <div class="author">
+                            <img src="./assets/author-1.png" class="author__photo">
+                            <div class="author__info">
+                                <span class="author__name">Alja Brun <br></span>
+                                <span class="publishing-date">20 Jan 2020</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="news__article">
+                        <img src="./assets/img-news-2.png">
+                        <h3>Effective advertising pointers</h3>
+                        <p>Having a home based business is a wonderful asset to your life...</p>
+                        <div class="author">
+                            <img src="./assets/author-2.png" class="author__photo">
+                            <div class="author__info">
+                                <span class="author__name">Dominic Freeman <br></span>
+                                <span class="publishing-date">13 Dec 2019</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="news__article">
+                        <img src="./assets/img-news-3.png">
+                        <h3>Hypnotise yourself into the ghost</h3>
+                        <p>There are many things that are important to catalog design...</p>
+                        <div class="author">
+                            <img src="./assets/author-3.png" class="author__photo">
+                            <div class="author__info">
+                                <span class="author__name">Alice Ward <br></span>
+                                <span class="publishing-date">30 Nov 2019</span>
+                            </div>
                         </div>
                     </article>
                 </div>
@@ -113,13 +157,15 @@
             <div class="container">
                 <h2>Gallery</h2>
                 <div class="gallery__images">
-                    <img src="./assets/img-gallery-1.png" alt="">
-                    <img src="./assets/img-gallery-2.png" alt="">
-                    <img src="./assets/img-gallery-3.png" alt="">
-                    <img src="./assets/img-gallery-4.png" alt="">
-                    <img src="./assets/img-gallery-5.png" alt="">
+                    <img src="./assets/img-gallery-1.png" alt="" class="img-one">
+                    <img src="./assets/img-gallery-2.png" alt="" class="img-two">
+                    <img src="./assets/img-gallery-3.png" alt="" class="img-three">
+                    <img src="./assets/img-gallery-4.png" alt="" class="img-four">
+                    <img src="./assets/img-gallery-5.png" alt="" class="img-five">
                 </div>
-                <a href="" class="see-more">See more</a>
+                <div class="gallery__button">
+                    <a href="" class="see-more">See more</a>
+                </div>
             </div>
         </section>
         <section class="contact">
@@ -169,5 +215,26 @@
             </ul>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./vendor/owl/owl.carousel.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    </script>
 </body>
 </html>
