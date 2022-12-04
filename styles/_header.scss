@@ -27,6 +27,7 @@
             display: none;
             @include mobile {
                 display: block;
+                z-index: 5;
             }
             .hamburger {
                 position: relative;
@@ -81,18 +82,16 @@
             column-gap: 50px;
             @include mobile {
                 flex-direction: column;
-                padding-top: 40px;
+                padding-top: 120px;
                 padding-bottom: 40px;
-                margin-top: 25px;
+                padding-left: 30px;
                 row-gap: 30px;
                 position: absolute;
                 right: -100%;
-                top: 70px;
-                background: url('../assets/bg-header.png'), $linearGradient1;
-                background-position-y: bottom;
+                top: 0;
+                background-color: $accent1;
                 width: 100%;
                 height: -webkit-fill-available;
-                padding-left: 30px;
                 transition: 0.3s;
                 &.active {
                     right: 0;
@@ -117,6 +116,7 @@
                 }
                 @include mobile {
                     font-size: 25px;
+                    //color: $accent2;
                 }
                 @include tablet {
                     font-size: 10px;
@@ -145,7 +145,7 @@
             a {
                 &:hover {
                     img {
-                        background: black;
+                        background: rgba(255,255,255,0.3);
                         border-radius: 50%;
                     }
                 }
@@ -199,8 +199,7 @@
             }
             &:hover {
                 img {
-                    border: none;
-                    background: black;
+                    background: rgba(255,255,255,0.3);
                     border-radius: 50%;
                 }
              }

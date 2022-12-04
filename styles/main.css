@@ -208,6 +208,7 @@ body {
 @media (max-width: 870px) {
   .main-header .main-header__nav .toggle-menu {
     display: block;
+    z-index: 5;
   }
 }
 .main-header .main-header__nav .toggle-menu .hamburger {
@@ -271,18 +272,16 @@ body {
 @media (max-width: 870px) {
   .main-header .main-header__nav .main-nav {
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 120px;
     padding-bottom: 40px;
-    margin-top: 25px;
+    padding-left: 30px;
     row-gap: 30px;
     position: absolute;
     right: -100%;
-    top: 70px;
-    background: url("../assets/bg-header.png"), linear-gradient(243.43deg, #55B7FF 16.9%, #7E5AFF 83.27%);
-    background-position-y: bottom;
+    top: 0;
+    background-color: #55B7FF;
     width: 100%;
     height: -webkit-fill-available;
-    padding-left: 30px;
     transition: 0.3s;
   }
   .main-header .main-header__nav .main-nav.active {
@@ -345,7 +344,7 @@ body {
   }
 }
 .main-header .main-header__nav .social-nav a:hover img {
-  background: black;
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
 }
 @media (min-width: 871px) and (max-width: 1224px) {
@@ -398,8 +397,7 @@ body {
   border-radius: 50%;
 }
 .main-header .main-header__content a:hover img {
-  border: none;
-  background: black;
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
 }
 
@@ -555,8 +553,27 @@ body {
   border: 0.5px solid #FFFFFF;
   background-color: #FFFFFF;
 }
+.news .owl-prev, .news .owl-next {
+  position: absolute;
+  top: 43%;
+}
+.news .owl-prev:hover, .news .owl-next:hover {
+  background: rgba(255, 255, 255, 0.3) !important;
+  height: 40px;
+  border-radius: 50%;
+}
+.news .owl-prev {
+  left: -100px;
+}
+.news .owl-next {
+  right: -100px;
+}
+.news .owl-dots {
+  margin-top: 60px;
+}
 .news .news__article {
   background-color: #FFFFFF;
+  cursor: pointer;
 }
 .news .news__article h3 {
   padding-top: 30px;
@@ -838,6 +855,6 @@ body {
        column-gap: 20px;
 }
 .main-footer .flex-container .social-nav a:hover img {
-  background: black;
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */

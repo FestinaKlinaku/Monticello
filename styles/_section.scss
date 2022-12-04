@@ -137,8 +137,27 @@
         }
         padding-bottom: 89px;
     }
+    .owl-prev, .owl-next {
+        position: absolute;
+        top: 43%;
+        &:hover {
+            background: rgba(255,255,255,0.3) !important;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+    .owl-prev {
+        left: -100px;
+    }
+    .owl-next {
+        right: -100px;
+    }
+    .owl-dots {
+        margin-top: 60px;
+    }
     .news__article {
         background-color: $neutralMax;
+        cursor: pointer;
         h3 {
             padding-top: 30px;
             padding-left: 20px;
