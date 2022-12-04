@@ -9,8 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./vendor/owl/assets/owl.carousel.css" />
     <link rel="stylesheet" href="./vendor/owl/assets/owl.theme.default.css" />
+    <script src="https://kit.fontawesome.com/98af5c3478.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/main.css">
     <title>Monticello</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 </head>
 <body>
     <header class="main-header">
@@ -19,21 +21,35 @@
                 <a href="#" class="logo">
                 <img src="./assets/logo.svg" alt="logo" />
                 </a>
-                <ul class="main-nav">
-                    <li class="main-nav__item"><a href="#projects">About us</a></li>
-                    <li class="main-nav__item"><a href="">Projects</a></li>
-                    <li class="main-nav__item"><a href="">News</a></li>
-                    <li class="main-nav__item"><a href="">Contact</a></li>
-                </ul>
-                <ul class="social-nav">
-                    <li><a href=""><img src="./assets/facebook.svg"/></a></li>
-                    <li><a href=""><img src="./assets/twitter.svg"/></a></li>
-                    <li><a href=""><img src="./assets/instagram.svg"/></a></li>
-                </ul>
+                <div class="toggle-menu">
+                    <span class="hamburger"></span>
+                </div>
+                <div class="main-menu">
+                    <ul class="main-nav">
+                        <li class="main-nav__item"><a href="#about">About us</a></li>
+                        <li class="main-nav__item"><a href="#projects">Projects</a></li>
+                        <li class="main-nav__item"><a href="#news">News</a></li>
+                        <li class="main-nav__item"><a href="#contact">Contact</a></li>
+                    </ul>
+                    <ul class="social-nav">
+                        <li><a href=""><img src="./assets/facebook.svg"/></a></li>
+                        <li><a href=""><img src="./assets/twitter.svg"/></a></li>
+                        <li><a href=""><img src="./assets/instagram.svg"/></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="main-header__content">
-                <h1>Simple & Modern</h1>
-                <span>We make the world beautiful everyday</span>
+            <div class="main-header__content" id="about">
+                <div class="owl-one owl-carousel owl-theme">
+                    <div class="change-content">
+                        <h1>Simple & Modern</h1>
+                        <span>We make the world beautiful everyday</span>
+                    </div>
+                    <div class="change-content">
+                        <h1>Simple & Modern</h1>
+                        <span>We make the world beautiful everyday</span>
+                    </div>
+                </div>
+                <a href="#projects"><img src="./assets/arrow.svg"></a>
             </div>
         </div>
     </header>
@@ -41,7 +57,7 @@
     <main class="main">
         <section class="projects" id="projects">
             <div class="container">
-                <h2>What we do</h2>
+                <h2 class="projects__title">What we do</h2>
                 <div class="flex-container">
                     <article class="project">
                         <div class="projects__image project-one">
@@ -74,10 +90,10 @@
                 </div>
             </div>
         </section>
-        <section class="news">
+        <section class="news" id="news">
             <div class="container">
                 <h2>Latest news</h2>
-                <div class="owl-carousel owl-theme">
+                <div class="owl-two owl-carousel owl-theme">
                     <article class="news__article">
                         <img src="./assets/img-news-1.png">
                         <h3>See the unmatched beauty of the great</h3>
@@ -168,17 +184,17 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <div class="form">
                     <h2>Get in touch</h2>
                     <div class="form__info">
                         <div class="contact__info">
                             <ul>
-                                <li>91 Nolan Extensions Suite 670</li>
-                                <li>+001 356-868-2454</li>
-                                <li>montichello@service.com</li>
-                                <li>From 07:05AM to 19:30PM</li>
+                                <li><i class="fas fa-map-marker-alt"></i>91 Nolan Extensions Suite 670</li>
+                                <li><i class="fas fa-phone"></i>+001 356-868-2454</li>
+                                <li><i class="fa fa-envelope-open"></i>montichello@service.com</li>
+                                <li><i class="fas fa-clock"></i>From 07:05AM to 19:30PM</li>
                             </ul>
                         </div>
                         <div class="contact__form">
@@ -223,22 +239,56 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./vendor/owl/owl.carousel.js"></script>
     <script>
-      $(".owl-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        responsive: {
-          0: {
+        $(".owl-one").owlCarousel({
             items: 1,
-          },
-          600: {
-            items: 2,
-          },
-          1000: {
-            items: 3,
-          },
-        },
-      });
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            margin: 10,
+            nav: true,
+        });
+
+        $(".owl-two").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            margin: 10,
+            nav: true,
+            responsive: {
+            0: {
+                items: 1,
+            },
+            871: {
+                items: 2,
+            },
+            1224: {
+                items: 3,
+            },
+            },
+        });
+
+        const toggleMenu = document.querySelector('.toggle-menu');
+        const mainNav = document.querySelector('.main-nav');
+        toggleMenu.addEventListener('click', () => {
+            toggleMenu.classList.toggle('active');
+            mainNav.classList.toggle('active');
+        })
+
+        document.querySelector('.main-menu').querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        document.querySelector('.main-header__content a').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
     </script>
 </body>
 </html>

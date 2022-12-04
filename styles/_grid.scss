@@ -5,4 +5,13 @@ body {
 
 .container {
     padding: 0 215px;
+    @include tablet {
+        padding: 0 100px;
+    }
+    @include mobile {
+        padding: 0 20px;
+    }
+    @include screen {
+        padding: 0 100px;
+    }
 }
