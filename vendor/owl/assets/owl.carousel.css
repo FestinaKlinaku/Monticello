@@ -110,8 +110,11 @@
 .owl-carousel .owl-animated-out {
   z-index: 1; }
 
-.owl-carousel .fadeOut {
-  animation-name: fadeOut; }
+.owl-carousel .fadeOutUp {
+  animation-name: fadeOutUp; }
+
+.owl-carousel .slideInUp {
+  animation-name: slideInUp; }
 
 @keyframes fadeOut {
   0% {

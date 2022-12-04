@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./vendor/owl/assets/owl.carousel.css" />
     <link rel="stylesheet" href="./vendor/owl/assets/owl.theme.default.css" />
     <script src="https://kit.fontawesome.com/98af5c3478.js" crossorigin="anonymous"></script>
@@ -45,8 +46,8 @@
                         <span>We make the world beautiful everyday</span>
                     </div>
                     <div class="change-content">
-                        <h1>Simple & Modern</h1>
-                        <span>We make the world beautiful everyday</span>
+                        <h1>New Slide</h1>
+                        <span>Lorem ipsum dolor sit amet consectetur</span>
                     </div>
                 </div>
                 <a href="#projects"><img src="./assets/arrow.svg"></a>
@@ -198,15 +199,15 @@
                             </ul>
                         </div>
                         <div class="contact__form">
-                            <form action="">
+                            <form action="/" method="get">
                                 <ul>
                                     <li>
                                         <label for="name">Name:</label>
-                                        <input type="text" id="name" name="user_name" placeholder="Name" value="Mollie Medina" />
+                                        <input type="text" id="name" name="user_name" placeholder="Name" value="Mollie Medina" required/>
                                     </li>
                                     <li>
                                         <label for="mail">E-mail:</label>
-                                        <input type="email" id="mail" name="user_email" placeholder="Email" />
+                                        <input type="email" id="mail" name="user_email" placeholder="Email" required />
                                     </li>
                                     <li><button type="submit" class="btn">Submit</button></li>
                                 </ul>
@@ -246,6 +247,8 @@
             autoplayTimeout: 4000,
             margin: 10,
             nav: true,
+            animateOut: 'fadeOutUp',
+            animateIn:'slideInUp',
         });
 
         $(".owl-two").owlCarousel({
